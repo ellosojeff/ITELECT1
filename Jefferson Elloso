@@ -1,0 +1,23 @@
+public class BasicMath {
+	public static void main(String[] args) {
+		int x = 45;
+		int y = 5;
+		char op = '/';
+
+		if (op == '+') {
+			System.out.println("Sum: " + (x + y));
+		} else if (op == '-') {
+			System.out.println("Difference: " + (x - y));
+		} else if (op == '*') {
+			System.out.println("Product: " + (x * y));
+		} else if (op == '/') {
+			if (y != 0) {
+				System.out.println("Quotient: " + (x / y));
+			} else {
+				System.out.println("Error! The answer will be undefined.");
+			}
+		} else {
+			System.out.println("Invalid operation!");
+		}
+	}
+}
